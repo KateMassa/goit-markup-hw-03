@@ -223,12 +223,12 @@ ol {
 
 .portfolio-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 24px;
+  row-gap: 24px;
+  column-gap: 48px;
 }
-.portfolio-card {
+.portfolio .portfolio-card {
   text-align: left;
   letter-spacing: 0.02em;
   display: flex;
@@ -238,6 +238,7 @@ ol {
   gap: 32px;
   border: 1px solid;
   border-color: #e7e9fc;
+  width: calc((100% - 24px) / 3);
 }
 .portfolio-card-heading {
   color: #2e2f42;
