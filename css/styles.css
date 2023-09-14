@@ -36,8 +36,7 @@ ol {
 }
 
 .features-card-heading,
-.team-card-heading,
-.portfolio-card-heading {
+.team-card-heading {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -202,12 +201,31 @@ ol {
 .portfolio {
   width: 1128px;
 }
+
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 .portfolio-card {
   text-align: left;
   letter-spacing: 0.02em;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid;
+  border-color: #e7e9fc;
+}
+.portfolio-card-heading {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 /*footer*/
 footer {
