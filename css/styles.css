@@ -51,7 +51,7 @@ ol {
   margin: 0;
 }
 /*logo*/
-.logo {
+.logo-header {
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
@@ -251,12 +251,31 @@ footer {
   width: 1440px;
   height: 312px;
   background-color: #2e2f42;
-  display: flex;
   padding: 100px 0;
+}
+.footer-container {
+  width: 264;
+  margin-left: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 16px;
+}
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #4d5ae5;
+  display: inline-flex;
 }
 .footer-text {
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 .footer-studio {
   color: #f4f4fd;
