@@ -121,13 +121,17 @@ body .img {
 
 .hero-screen {
   background-color: #2e2f42;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 188px 0;
 }
-
+.hero-container,
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .title {
   max-width: 496px;
   font-weight: 700;
@@ -141,7 +145,6 @@ body .img {
   display: block;
   min-width: 169px;
   height: 56px;
-  border: none;
   font-family: "Roboto", sans-serif;
   background-color: #4d5ae5;
   color: #fff;
@@ -150,6 +153,7 @@ body .img {
   font-weight: 500;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
 }
 .hero-button:hover,
@@ -202,7 +206,6 @@ body .img {
 
 .team {
   background-color: #f4f4fd;
-  width: 1440px;
   height: 732px;
 }
 .team-card-container {
@@ -233,26 +236,27 @@ body .img {
 
 /*Portfolio*/
 
-.thumb-portfolio {
-  height: 420px;
-}
-
 .thumb-portfolio img {
   max-width: 100%;
   object-fit: cover;
 }
-.portfolio {
-  width: 1128px;
-}
 
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  row-gap: 24px;
-  column-gap: 48px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
-.portfolio .portfolio-card {
+.portfolio-card {
   text-align: left;
   letter-spacing: 0.02em;
   display: flex;
@@ -262,7 +266,12 @@ body .img {
   gap: 32px;
   border: 1px solid;
   border-color: #e7e9fc;
-  width: calc((100% - 24px) / 3);
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-app-descr {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-card-heading {
   color: #2e2f42;
@@ -270,21 +279,21 @@ body .img {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-bottom: 8px;
 }
 /*footer*/
 footer {
-  width: 1440px;
   height: 312px;
   background-color: #2e2f42;
   padding: 100px 0;
 }
 .footer-container {
-  flex-basis: 264px;
-  margin-left: 156px;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  gap: 16px;
+  align-items: self-start;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .logo-footer {
   font-family: Raleway, sans-serif;
@@ -295,7 +304,8 @@ footer {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #4d5ae5;
-  display: inline-flex;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   color: #f4f4fd;
