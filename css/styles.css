@@ -28,7 +28,7 @@ body .img {
   padding: 120px 0;
 }
 
-.features-heading,
+.visually-hidden,
 .team-heading,
 .portfolio-heading {
   color: #2e2f42;
@@ -41,8 +41,7 @@ body .img {
   margin-bottom: 72px;
 }
 
-.features-card-heading,
-.team-card-heading {
+.features-card-heading {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -56,8 +55,6 @@ body .img {
 .container {
   display: flex;
   width: 1158px;
-  justify-content: flex-start;
-  align-items: flex-start;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -77,7 +74,6 @@ body .img {
   color: #4d5ae5;
   display: inline-flex;
   margin-right: 76px;
-  margin-left: 156px;
 }
 .studio {
   color: #2e2f42;
@@ -124,8 +120,6 @@ body .img {
 /*hero screen*/
 
 .hero-screen {
-  width: 1440px;
-  height: 600px;
   background-color: #2e2f42;
   display: flex;
   flex-direction: column;
@@ -142,7 +136,6 @@ body .img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-bottom: 48px;
 }
 .hero-button {
   display: block;
@@ -166,9 +159,9 @@ body .img {
 
 /*Features*/
 .features {
-  width: 1124px;
   padding: 120px 0;
 }
+
 .features-list,
 .team-list {
   display: flex;
@@ -177,7 +170,7 @@ body .img {
   gap: 24px;
 }
 .features-card {
-  width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 .features-card-heading {
   color: #2e2f42;
@@ -185,12 +178,17 @@ body .img {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-bottom: 8px;
 }
 .features-card-text {
   letter-spacing: 0.02em;
 }
 
 /*Team*/
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 
 .thumb-team {
   height: 380px;
@@ -207,20 +205,27 @@ body .img {
   width: 1440px;
   height: 732px;
 }
-
+.team-card-container {
+  padding: 32px 0;
+}
 .team-card {
+  flex-basis: calc((100% - 72px) / 4);
   text-align: center;
   background-color: #fff;
-  display: inline-flex;
-  padding-bottom: 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px;
 }
+
+.team-card-heading {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
 .team-card-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
