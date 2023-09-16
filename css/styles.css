@@ -303,7 +303,7 @@ footer {
   padding: 0 15px;
 }
 
-footer a {
+.footer .container a {
   display: inline-block;
 }
 
