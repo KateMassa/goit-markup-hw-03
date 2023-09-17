@@ -183,7 +183,7 @@ img {
   gap: 24px;
 }
 
-.features-list li {
+.features-list .features-card {
   width: calc((100% - 72px) / 4);
 }
 .features-card-heading {
@@ -204,7 +204,7 @@ img {
   gap: 24px;
 }
 
-.team-list li {
+.team-list .team-card {
   width: calc((100% - 72px) / 4);
 }
 
@@ -258,7 +258,7 @@ img {
   column-gap: 24px;
 }
 
-.portfolio-list li {
+.portfolio-list .portfolio-card {
   width: calc((100% - 48px) / 3);
 }
 
@@ -303,7 +303,7 @@ footer {
   padding: 0 15px;
 }
 
-.footer .container a {
+.container .logo-footer {
   display: inline-block;
 }
 
