@@ -120,6 +120,8 @@ img {
   letter-spacing: 0.02em;
   padding: 24px 0;
 }
+
+.menu-item:hover,
 .menu:hover,
 .menu:focus {
   color: #404bbf;
